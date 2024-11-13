@@ -40,8 +40,11 @@ spec:
       source:
         path: bootstrap/cluster-resources/{{name}}
         repoURL: https://github.com/leandersteiner/gitops.git
+        directory:
+          recurse: true
       syncPolicy:
         automated:
           allowEmpty: true
           selfHeal: true
+          prune: true
 status: {}
