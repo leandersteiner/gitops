@@ -1,0 +1,11 @@
+{
+  "appName": "podinfo",
+  "userGivenName": "podinfo",
+  "destNamespace": "default",
+  "destServer": "https://kubernetes.default.svc",
+  "srcPath": "apps/podinfo/overlays/podinfo-dev",
+  "srcRepoURL": "https://github.com/leandersteiner/gitops.git",
+  "srcTargetRevision": "",
+  "labels": null,
+  "annotations": null
+}
