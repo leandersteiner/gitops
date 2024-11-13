@@ -16,6 +16,8 @@ spec:
       creationTimestamp: null
       labels:
         app: podinfo
+      annotations:
+        reloader.stakater.com/auto: "true"
     spec:
       containers:
       - image: ghcr.io/stefanprodan/podinfo:6.4.0
@@ -23,4 +25,7 @@ spec:
         ports:
         - containerPort: 9898
         resources: {}
+        envFrom:
+          - secretRef:
+              name: database-credentials
 status: {}
