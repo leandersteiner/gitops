@@ -5,9 +5,7 @@ metadata:
   namespace: argocd
 spec:
   syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
+    automated: { }
   project: default
   source:
     repoURL: https://github.com/leandersteiner/gitops
